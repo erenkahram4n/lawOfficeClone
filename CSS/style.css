@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', 'sans-serif';
+}
+
+/* hero image */
+.hero-image{
+    background-image: linear-gradient(#020a02b6,#020a02b6),url(../img/arkaplan.jpg);
+    height: 320px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+.navbar-brand img{
+    width: 236px;
+    height: 32px;
+}
+.nav-item{
+    margin-inline: 10px;
+    font-size: 14px;
+}
+.hero-text{
+    color: white;
+    position:absolute;
+    top: 82.5%;
+    left: 49.8%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 7px;
+    font-size: 23px;
+    font-weight: 520;
+    font-family:'Times New Roman', Times, serif;
+}
+.list li{
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13.5px;
+    line-height: 33px;
+    font-weight: bold;
+}
+.list li a{
+    text-decoration: none;
+    color:rgb(161,161,161);
+    transition: 0.6s;
+    
+}
+.list li .all{
+    color: #990033;
+}
+.list li a:hover{
+    color: #990033;
+}
+.hr1{
+    border: 1px solid black;
+}
+.card{
+    background-color: #020a20;
+    border: none;
+    border-radius: 0;
+}
+.card img{
+    opacity: 0.8;
+
+}
+.card-body{
+    background-color: white;
+    text-align: center;
+}
+.card h5{
+    font-size: 15.5px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+@media screen and (max-width:1250px) {
+    .nav-item{
+        margin-inline: 3px;
+        font-size: 11px;
+    }
+    .navbar-brand img{
+        width: 180px;
+        height: 30px;
+    }
+}
+@media screen and (max-width:992px) {
+    .navbar-brand img{
+        width: 300px;
+        height: 40px;
+    }
+}
+@media screen and (max-width:768px) {
+    .hero-text{
+        top: 50%;
+    }
+    .hero-image img{
+        background-size: 150%;
+    }
+    .list{
+        text-align: center;
+    }
+    .hr1{
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+}
+@media screen and (max-width:490px) {
+    .navbar-brand{
+        margin-left: 0 !important;
+    }
+    .navbar-toggler{
+        width: 20px !important;
+        height: 20px !important;
+        position: relative;
+    }
+    .navbar-toggler-icon{
+        width: 20px !important;
+        height: 20px !important;
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
